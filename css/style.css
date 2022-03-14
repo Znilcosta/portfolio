@@ -1,0 +1,336 @@
+:root {
+    --bg-cabecalho: #D8D8D8;
+    --cinza-titulos: #999999;
+    --cinza-textos: #6D6D6D;
+    --rosa: #FFE8E8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+
+    background: linear-gradient(90deg, #FFF 20%, var(--bg-cabecalho) 20%);
+}
+
+.cabecalho-lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10rem;
+    padding-left: 10%;
+}
+
+.ola-mensagem {
+    font-size: 100px;
+    text-align: left;
+    max-width: 10rem;
+    color: var(--cinza-titulos);
+}
+
+.redes-sociais ul {
+    font-size: 1rem;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.redes-sociais-siglas {
+    text-align: center;
+    padding: 0 3rem 0;
+}
+
+.redes-sociais-siglas a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.curriculo {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    top: 1.5rem;
+    left: 9%;
+    padding: 1rem 2rem;
+    background-color: var(--rosa);
+}
+
+.cabecalho-navegacao ul {
+   align-content: space-around;
+   margin-left: 10rem;
+   padding-top: 2rem;
+}
+
+.cabecalho-item {
+    display: inline-block;
+}
+
+.cabecalho-item a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.imagem-cabecalho {
+    max-height: 49.3rem;
+}
+
+/*Seção de experiências profissionais*/
+
+.secao {
+    display: flex;
+    margin: 6rem 8.28%;
+}
+
+.profissional-trabalho {
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.titulo {  
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--cinza-titulos);
+}
+
+.profissional-subtitulo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--cinza-titulos);
+
+    padding-top: 3.2rem;
+}
+
+.profissional-data {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7E7C7C;
+
+    padding-top: .4rem;
+}
+
+.profissional-conteudo {
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+.profissional-texto {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+
+    padding-top: 8.0rem;
+}
+
+.profissional-texto2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+
+    padding-top: 3.0rem;
+}
+
+.icones {
+    font-size: .8rem;
+    color: #666666;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.icone {
+    border: #000000 solid 1px;
+    border-radius: 1rem;
+    background: #EDEDED;
+
+    padding: .4rem;
+    margin: .3rem 0 0 .4rem;
+}
+
+/*Seção Projetos - foi utilizado divs para posicionar elementos utilizando flexbox*/
+
+.secao-projeto {
+    margin: 6rem 8.28%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    padding-top: 3.2rem;
+}
+
+.imagem {
+   align-content: flex-start;
+   width: 529px;
+   height: 472px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 5rem;
+}
+
+.container3 {
+    display: flex;
+
+    margin: 3rem 0;
+}
+.projeto-titulo {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--cinza-titulos);
+
+    text-decoration: none;
+}
+
+.projeto-texto {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+    line-height: 2rem;
+    letter-spacing: 0.39px;
+    text-align: justify;
+}
+
+.container-invertido {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    padding-top: 3.2rem;
+}
+
+.container2-invertido {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 5rem;
+}
+
+.container3-invertido {
+    display: flex;
+    margin: 3rem 0;
+}
+
+/*ABOUT*/
+
+.sobre {
+    margin: 6rem 8.28%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-texto {
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+    line-height: 2rem;
+    letter-spacing: 0.39px;
+    text-align: justify;
+
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.sobre-foto {
+    height: 17.87rem;
+    background-image: url(../images/vale-do-silicio.jpg);
+    padding-top: 2rem;
+}
+
+.cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+.cartao {
+    border: #000000 auto solid;
+    background-color: #FFE8E8;
+    padding: 1rem 1rem 2rem 1rem;
+    max-width: 16.87rem;
+    height: 7.25rem;
+    margin-left: 60%;
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.cartao p{
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #2E2E2E;
+    
+    padding: .4rem;
+}
+
+.contatos {
+    text-decoration: none;
+    
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #2E2E2E;
+}
+
+.sobre-texto- {
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+    line-height: 2rem;
+    letter-spacing: 0.39px;
+    text-align: justify;
+
+    padding-top: 2rem;
+    max-width: 50%;
+}
+
+.assinatura {
+    font-family: 'Licorice', cursive;
+    font-size: 5rem;
+    color: var(--cinza-textos);
+    
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 13rem;
+    background: var(--bg-cabecalho);
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cinza-textos);
+
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
