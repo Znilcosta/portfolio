@@ -345,6 +345,7 @@ footer p {
     .cabecalho-lado-esquerdo {
         align-items: center;
         padding-top: 2rem;
+        padding-left: 0rem;
     }
 
     .ola-mensagem {
